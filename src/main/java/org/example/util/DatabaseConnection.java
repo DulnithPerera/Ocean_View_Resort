@@ -44,7 +44,6 @@ public class DatabaseConnection {
     }
 
 
-
     public static void closeConnection(Connection con) {
         if (con != null) {
             try {
