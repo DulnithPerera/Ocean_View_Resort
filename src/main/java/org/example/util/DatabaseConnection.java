@@ -43,6 +43,8 @@ public class DatabaseConnection {
         return con;
     }
 
+
+
     public static void closeConnection(Connection con) {
         if (con != null) {
             try {
