@@ -40,6 +40,7 @@ public class UserService {
         return userDao.updatePassword(userId, hash);
     }
 
+
     public boolean deleteUser(int userId) {
         return userDao.delete(userId);
     }

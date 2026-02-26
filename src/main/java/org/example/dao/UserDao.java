@@ -129,6 +129,7 @@ public class UserDao {
         return false;
     }
 
+
     public int getActiveUserCount() {
         String sql = "SELECT COUNT(*) FROM Users WHERE is_active = 1";
         try (Connection conn = DatabaseConnection.getConnection();

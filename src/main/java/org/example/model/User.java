@@ -57,6 +57,7 @@ public class User {
 
     public boolean isAdmin() { return "admin".equals(this.role); }
 
+
     @Override
     public String toString() {
         return "User{userId=" + userId + ", username='" + username + "', fullName='" + fullName +
