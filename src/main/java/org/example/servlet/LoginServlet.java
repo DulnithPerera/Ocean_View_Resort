@@ -40,6 +40,7 @@ public class LoginServlet extends HttpServlet {
             return;
         }
 
+
         User user = authService.login(username.trim(), password);
         if (user != null) {
             authService.createSession(request, user, rememberMe, response);
