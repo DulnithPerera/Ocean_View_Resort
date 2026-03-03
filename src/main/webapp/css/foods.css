@@ -1,0 +1,38 @@
+.food-type-header {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary);
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--primary-light);
+    margin-bottom: 10px;
+}
+
+.food-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.food-item:last-child {
+    border-bottom: none;
+}
+
+.food-name {
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.food-description {
+    font-size: 12px;
+    color: var(--gray-500);
+    margin-top: 2px;
+}
+
+.food-price {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--success);
+    white-space: nowrap;
+}
