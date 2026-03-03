@@ -11,9 +11,9 @@ import java.util.List;
 public class UserDao {
 
     public User authenticate(String username, String passwordHash) {
-        String sql = "{CALL sp_AuthenticateUser(?, ?)}";
+        String sql = "SELECT * FROM Users WHERE username = ? AND password_hash = ? AND is_active = 1";
         try (Connection conn = DatabaseConnection.getConnection();
-             CallableStatement stmt = conn.prepareCall(sql)) {
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
             stmt.setString(1, username);
             stmt.setString(2, passwordHash);
             ResultSet rs = stmt.executeQuery();
