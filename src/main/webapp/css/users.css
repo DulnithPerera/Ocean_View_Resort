@@ -1,0 +1,23 @@
+.user-status-toggle {
+    cursor: pointer;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    border: none;
+    transition: var(--transition);
+}
+
+.user-status-toggle.active {
+    background: #d4edda;
+    color: #155724;
+}
+
+.user-status-toggle.inactive {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.user-status-toggle:hover {
+    opacity: 0.8;
+}
