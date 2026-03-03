@@ -1,0 +1,29 @@
+.rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.room-card {
+    border: 1px solid var(--gray-300);
+    border-radius: var(--radius);
+    padding: 15px;
+    transition: var(--transition);
+}
+
+.room-card:hover {
+    box-shadow: var(--shadow);
+}
+
+.room-number {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.room-rate {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark);
+    margin-top: 8px;
+}
