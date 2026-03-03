@@ -1,0 +1,13 @@
+.order-summary {
+    background: var(--gray-100);
+    border-radius: var(--radius);
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.order-summary .order-total {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary);
+    text-align: right;
+}
